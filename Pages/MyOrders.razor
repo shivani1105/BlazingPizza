@@ -19,7 +19,7 @@
         <h2>No orders placed</h2>
         <a class="btn btn-success" href="">Order some pizza</a>
     }
-    <!--else
+    else
     {
         <div class="list-group orders-list">
             @foreach (var item in ordersWithStatus)
@@ -46,8 +46,8 @@
                 </div>
             }
         </div>
-    }-->
-    else
+    }
+    <!--else
     {
     <PaginationComponent TItem="OrderWithStatus"
                          Items="ordersWithStatus.OrderBy(o => o.Order.CreatedTime).ToList()"
@@ -78,7 +78,7 @@
             </div>
         </ItemContent>
     </PaginationComponent>
-    }
+    }-->
 </div>
 
 @code {
