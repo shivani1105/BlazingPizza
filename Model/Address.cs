@@ -12,7 +12,7 @@ namespace BlazingPizza.Model
         [Required, MinLength(5, ErrorMessage = "Please use an Address bigger than 5 letters."), MaxLength(100, ErrorMessage = "Please use an Address less than 100 letters.")]
         public string Line1 { get; set; }
 
-        [MaxLength(100)]
+        [Required, MaxLength(100)]
         public string? Line2 { get; set; }
 
         [Required, MinLength(3, ErrorMessage = "Please use a City bigger than 3 letters."), MaxLength(50, ErrorMessage = "Please use a City less than 50 letters.")]

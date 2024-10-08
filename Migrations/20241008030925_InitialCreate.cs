@@ -19,7 +19,7 @@ namespace BlazingPizza.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     Name = table.Column<string>(type: "TEXT", maxLength: 100, nullable: false),
                     Line1 = table.Column<string>(type: "TEXT", maxLength: 100, nullable: false),
-                    Line2 = table.Column<string>(type: "TEXT", maxLength: 100, nullable: true),
+                    Line2 = table.Column<string>(type: "TEXT", maxLength: 100, nullable: false),
                     City = table.Column<string>(type: "TEXT", maxLength: 50, nullable: false),
                     Region = table.Column<string>(type: "TEXT", maxLength: 20, nullable: false),
                     PostalCode = table.Column<string>(type: "TEXT", nullable: false)
